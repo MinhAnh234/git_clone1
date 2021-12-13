@@ -49,6 +49,7 @@ document.getElementById('disable_camera').onclick = () => {
     toggleCamera();
 }
 
+
 var isCameraOn = true;
 
 function toggleCamera() {
@@ -110,7 +111,7 @@ client.init("30eff82ca4364f039f198eb020008132", function(){
 });
 
 //Joining the client
-client.join(null, channelName, null, function(uid){
+client.join("4325c317ba7045f0a48f490077180135", "6296","9KcdqsZHZ", function(uid){
 
     let localstream = AgoraRTC.createStream({
         streamID : uid,
